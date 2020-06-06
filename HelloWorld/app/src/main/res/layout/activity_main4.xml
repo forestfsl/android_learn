@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<!--    HorizontalScrollView 是水平方向的滚动视图，当前高度为200dp-->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+<!--        水平方向的线性视图，两个子视图的颜色分别为青色和黄色-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:background="#aaffff"/>
+
+            <View
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:background="#ffff00"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+<!--    垂直方向的线性视图，两个子视图的颜色分别为绿色和橙色-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        垂直视图的线性视图，两个子视图的颜色分别为绿色和橙色-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#00ff00"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#ffffaa" />
+
+<!--        如果scrollView内容不够，又想充满屏幕，可以设置如下两个属性值-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:fillViewport="true"-->
+    </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

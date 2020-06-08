@@ -82,6 +82,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId() == R.id.btn_icon) {
             Intent intent = new Intent(this, IconActivity.class);
             startActivity(intent);
+        }else if (v.getId() == R.id.btn_state) {
+            Intent intent = new Intent(this, StateActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_shape) {
+            Intent intent = new Intent(this, ShapeActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_nine) {
+            Intent intent = new Intent(this, NineActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_calculator) {
+            Intent intent = new Intent(this, CalculatorActivity.class);
+            startActivity(intent);
         }
     }
 }

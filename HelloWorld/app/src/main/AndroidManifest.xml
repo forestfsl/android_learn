@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClickActivity"></activity>
+        <activity android:name=".CaptureActivity"></activity>
+        <activity android:name=".ScaleActivity" />
+        <activity android:name=".ClickActivity" />
         <activity android:name=".BbsActivity" />
         <activity android:name=".ScrollActivity" />
         <activity android:name=".GravityActivity" />

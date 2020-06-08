@@ -73,6 +73,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId() == R.id.btn_click) {
             Intent intent = new Intent(this, ClickActivity.class);
             startActivity(intent);
+        }else if (v.getId() == R.id.btn_scale) {
+            Intent intent = new Intent(this, ScaleActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_capture) {
+            Intent intent = new Intent(this, CaptureActivity.class);
+            startActivity(intent);
         }
     }
 }

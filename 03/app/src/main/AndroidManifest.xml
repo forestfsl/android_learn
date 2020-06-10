@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RelativeCodeActivity"></activity>
+        <activity android:name=".RadioVerticalActivity"></activity>
+        <activity android:name=".RadioHorizontalActivity" />
+        <activity android:name=".SwitchIOSActivity" />
+        <activity android:name=".SwitchDefaultActivity" />
+        <activity android:name=".CheckboxActivity" />
+        <activity android:name=".FrameActivity" />
+        <activity android:name=".RelativeCodeActivity" />
         <activity android:name=".RelativeXmlActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -14,6 +14,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_relative_xml).setOnClickListener(this);
         findViewById(R.id.btn_relative_code).setOnClickListener(this);
+        findViewById(R.id.btn_frame).setOnClickListener(this);
+        findViewById(R.id.btn_checkbox).setOnClickListener(this);
+        findViewById(R.id.btn_switch_default).setOnClickListener(this);
+        findViewById(R.id.btn_switch_ios).setOnClickListener(this);
+        findViewById(R.id.btn_radio_horizontal).setOnClickListener(this);
+        findViewById(R.id.btn_radio_vertical).setOnClickListener(this);
     }
 
     @Override
@@ -23,6 +29,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }else if (v.getId() == R.id.btn_relative_code) {
             Intent intent = new Intent(this, RelativeCodeActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_frame) {
+            Intent intent = new Intent(this, FrameActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_checkbox) {
+            Intent intent = new Intent(this, CheckboxActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_switch_default) {
+            Intent intent = new Intent(this, SwitchDefaultActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_switch_ios) {
+            Intent intent = new Intent(this, SwitchIOSActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_radio_horizontal) {
+            Intent intent = new Intent(this, RadioHorizontalActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_radio_vertical) {
+            Intent intent = new Intent(this, RadioVerticalActivity.class);
             startActivity(intent);
         }
     }

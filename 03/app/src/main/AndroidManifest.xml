@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RadioVerticalActivity"></activity>
+        <activity android:name=".SpinnerIconActivity"></activity>
+        <activity android:name=".SpinnerDialogActivity" />
+        <activity android:name=".SpinnerDropdownActivity" />
+        <activity android:name=".RadioVerticalActivity" />
         <activity android:name=".RadioHorizontalActivity" />
         <activity android:name=".SwitchIOSActivity" />
         <activity android:name=".SwitchDefaultActivity" />

@@ -110,6 +110,46 @@
 
            </LinearLayout>
 
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:text="3.3 适配视图基础"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/btn_spinner_dropdown"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="下拉列表"
+                   tools:ignore="Suspicious0dp" />
+
+
+
+               <Button
+                   android:id="@+id/btn_spinner_dialog"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="对话框列表"
+                   tools:ignore="Suspicious0dp" />
+
+
+               <Button
+                   android:id="@+id/btn_spinner_icon"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="对图标列表"
+                   tools:ignore="Suspicious0dp" />
+           </LinearLayout>
+
        </LinearLayout>
    </ScrollView>
 

@@ -109,6 +109,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId() == R.id.btn_text_check) {
             Intent intent = new Intent(this, TextCheckActivity.class);
             startActivity(intent);
+        }else if (v.getId() == R.id.btn_mortgage) {
+            Intent intent = new Intent(this, MortgageActivity.class);
+            startActivity(intent);
         }
     }
 }

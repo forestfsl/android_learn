@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_spinner_dropdown).setOnClickListener(this);
         findViewById(R.id.btn_spinner_dialog).setOnClickListener(this);
         findViewById(R.id.btn_spinner_icon).setOnClickListener(this);
+        findViewById(R.id.btn_edit_simple).setOnClickListener(this);
+        findViewById(R.id.btn_edit_cursor).setOnClickListener(this);
+        findViewById(R.id.btn_edit_border).setOnClickListener(this);
+        findViewById(R.id.btn_edit_hide).setOnClickListener(this);
+        findViewById(R.id.btn_edit_jump).setOnClickListener(this);
+        findViewById(R.id.btn_edit_auto).setOnClickListener(this);
     }
 
     @Override
@@ -60,6 +66,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId() == R.id.btn_spinner_icon) {
             Intent intent = new Intent(this, SpinnerIconActivity.class);
             startActivity(intent);
+        }else if (v.getId() == R.id.btn_edit_simple) {
+            Intent intent = new Intent(this, EditSimpleActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_edit_cursor) {
+            Intent intent = new Intent(this, EditCursorActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_edit_border) {
+            Intent intent = new Intent(this, EditBorderActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_edit_hide) {
+            Intent intent = new Intent(this, EditHideActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_edit_jump) {
+            Intent intent = new Intent(this, EditJumpActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_edit_auto) {
+            Intent intent = new Intent(this, EditAutoActivity.class);
+            startActivity(intent);
         }
+//        else if (v.getId() == R.id.btn_act_jump) {
+//            Intent intent = new Intent(this, ActJumpActivity.class);
+//            startActivity(intent);
+//        }
     }
 }

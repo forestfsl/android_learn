@@ -217,6 +217,92 @@
                    tools:ignore="Suspicious0dp"/>
            </LinearLayout>
 
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:text="3.5Activity 基础"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <Button
+                   android:id="@+id/btn_act_jump"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="跳转与返回"
+                   tools:ignore="Suspicious0dp" />
+
+
+               <Button
+                   android:id="@+id/btn_act_rotate"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="横竖屏切换"
+                   tools:ignore="Suspicious0dp" />
+
+               <Button
+                   android:id="@+id/btn_act_home"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="按下HOME键"
+                   tools:ignore="Suspicious0dp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/btn_act_uri"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="跳转到Uri" />
+
+               <Button
+                   android:id="@+id/btn_act_request"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="请求参数和应答参数" />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:text="3.6 实战项目-房贷计算器" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/btn_text_check"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="文本校验" />
+
+               <Button
+                   android:id="@+id/btn_mortgage"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="房贷计算器" />
+           </LinearLayout>
+
        </LinearLayout>
    </ScrollView>
 

@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_act_request).setOnClickListener(this);
         findViewById(R.id.btn_text_check).setOnClickListener(this);
         findViewById(R.id.btn_mortgage).setOnClickListener(this);
+        findViewById(R.id.btn_alert).setOnClickListener(this);
+        findViewById(R.id.btn_login).setOnClickListener(this);
     }
 
     @Override
@@ -111,6 +113,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }else if (v.getId() == R.id.btn_mortgage) {
             Intent intent = new Intent(this, MortgageActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_alert) {
+            Intent intent = new Intent(this, AlertActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_login) {
+            Intent intent = new Intent(this, LoginMainActivity.class);
             startActivity(intent);
         }
     }

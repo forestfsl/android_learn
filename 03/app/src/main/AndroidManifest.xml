@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.forest.a03">
-    <!-- 拨打电话 -->
-    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 发送短信 -->
-    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MortgageActivity"></activity>
+        <activity android:name=".LoginForgetActivity"></activity>
+        <activity android:name=".LoginMainActivity" />
+        <activity android:name=".AlertActivity" />
+        <activity android:name=".MortgageActivity" />
         <activity android:name=".TextCheckActivity" />
         <activity android:name=".ActResponseActivity" />
         <activity android:name=".ActRequestActivity" />
@@ -46,5 +46,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

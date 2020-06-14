@@ -303,6 +303,32 @@
                    android:text="房贷计算器" />
            </LinearLayout>
 
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:text="3.7 实战项目-登录页面"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/btn_alert"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="提醒对话框"/>
+
+               <Button
+                   android:id="@+id/btn_login"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="App登录页面"/>
+           </LinearLayout>
        </LinearLayout>
    </ScrollView>
 

@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_file_path).setOnClickListener(this);
         findViewById(R.id.btn_text_write).setOnClickListener(this);
         findViewById(R.id.btn_text_read).setOnClickListener(this);
+        findViewById(R.id.btn_image_write).setOnClickListener(this);
+        findViewById(R.id.btn_image_read).setOnClickListener(this);
+        findViewById(R.id.btn_app_life).setOnClickListener(this);
+        findViewById(R.id.btn_app_write).setOnClickListener(this);
+        findViewById(R.id.btn_app_read).setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +64,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (v.getId() == R.id.btn_text_read) {
             Intent intent = new Intent(this, TextReadActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_image_write) {
+            Intent intent = new Intent(this, ImageWriteActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_image_read) {
+            Intent intent = new Intent(this, ImageReadActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_app_life) {
+            Intent intent = new Intent(this, ActJumpActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_app_write) {
+            Intent intent = new Intent(this, AppWriteActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_app_read) {
+            Intent intent = new Intent(this, AppReadActivity.class);
             startActivity(intent);
         }
     }

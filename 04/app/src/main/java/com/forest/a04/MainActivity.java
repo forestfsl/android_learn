@@ -2,9 +2,14 @@ package com.forest.a04;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
+
+import com.forest.a04.util.PermissionUtil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,6 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_app_life).setOnClickListener(this);
         findViewById(R.id.btn_app_write).setOnClickListener(this);
         findViewById(R.id.btn_app_read).setOnClickListener(this);
+        findViewById(R.id.btn_content_provider).setOnClickListener(this);
+        findViewById(R.id.btn_content_resolver).setOnClickListener(this);
+        findViewById(R.id.btn_content_observer).setOnClickListener(this);
+        findViewById(R.id.btn_menu_option).setOnClickListener(this);
+        findViewById(R.id.btn_menu_context).setOnClickListener(this);
+        findViewById(R.id.btn_shopping_cart).setOnClickListener(this);
     }
 
     @Override
@@ -80,6 +91,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (v.getId() == R.id.btn_app_read) {
             Intent intent = new Intent(this, AppReadActivity.class);
             startActivity(intent);
+        }else if (v.getId() == R.id.btn_content_provider) {
+            Intent intent = new Intent(this, ContentProviderActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_content_resolver) {
+            if (PermissionUtil.checkMultiPermission(this, new String[] {Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS}, R.id.btn_content_resolver % 65536)) {
+                startActivity(new Intent(this, ContentResolverActivity.class));
+            }
+        }else if (v.getId() == R.id.btn_content_observer) {
+            if (PermissionUtil.checkMultiPermission(this, new String[] {Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS}, R.id.btn_content_observer % 65536)) {
+                startActivity(new Intent(this, ContentObserverActivity.class));
+            }
+        }
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == R.id.btn_content_resolver % 65536) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                startActivity(new Intent(this, ContentResolverActivity.class));
+            } else {
+                Toast.makeText(this, "需要允许通讯录权限才能读写联系人噢", Toast.LENGTH_SHORT).show();
+            }
+        } else if (requestCode == R.id.btn_content_observer % 65536) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                startActivity(new Intent(this, ContentObserverActivity.class));
+            } else {
+                Toast.makeText(this, "需要允许短信权限才能校准流量噢", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }

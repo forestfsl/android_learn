@@ -22,7 +22,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ContentObserverActivity"></activity>
+        <activity android:name=".ShoppingDetailActivity"></activity>
+        <activity android:name=".ShoppingChannelActivity" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".MenuContextActivity" />
+        <activity android:name=".MenuOptionActivity" />
+        <activity android:name=".ContentObserverActivity" />
         <activity android:name=".ContentResolverActivity" />
         <activity android:name=".ContentProviderActivity" />
         <activity android:name=".AppReadActivity" />

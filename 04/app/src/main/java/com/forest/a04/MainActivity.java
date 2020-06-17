@@ -102,6 +102,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (PermissionUtil.checkMultiPermission(this, new String[] {Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS}, R.id.btn_content_observer % 65536)) {
                 startActivity(new Intent(this, ContentObserverActivity.class));
             }
+        }else if (v.getId() == R.id.btn_menu_option) {
+            Intent intent = new Intent(this, MenuOptionActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_menu_context) {
+            Intent intent = new Intent(this, MenuContextActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_shopping_cart) {
+            Intent intent = new Intent(this, ShoppingCartActivity.class);
+            startActivity(intent);
         }
     }
     @Override

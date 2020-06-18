@@ -20,6 +20,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_grid_view).setOnClickListener(this);
         findViewById(R.id.btn_grid_channel).setOnClickListener(this);
         findViewById(R.id.btn_view_pager).setOnClickListener(this);
+        findViewById(R.id.btn_title_strip).setOnClickListener(this);
+        findViewById(R.id.btn_tab_strip).setOnClickListener(this);
+        findViewById(R.id.btn_launch_simple).setOnClickListener(this);
+        findViewById(R.id.btn_fragment_static).setOnClickListener(this);
+        findViewById(R.id.btn_fragment_dynamic).setOnClickListener(this);
+        findViewById(R.id.btn_launch_improve).setOnClickListener(this);
+        findViewById(R.id.btn_broad_temp).setOnClickListener(this);
+        findViewById(R.id.btn_broad_system).setOnClickListener(this);
+        findViewById(R.id.btn_alarm).setOnClickListener(this);
+        findViewById(R.id.btn_month_picker).setOnClickListener(this);
+        findViewById(R.id.btn_calendar).setOnClickListener(this);
+        findViewById(R.id.btn_vibrator).setOnClickListener(this);
+        findViewById(R.id.btn_schedule).setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +60,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }else if (v.getId() == R.id.btn_view_pager) {
             Intent intent = new Intent(this, ViewPagerActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_title_strip) {
+            Intent intent = new Intent(this, PagerTitleStripActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_tab_strip) {
+            Intent intent = new Intent(this, PagerTabStripActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_launch_simple) {
+            Intent intent = new Intent(this, LaunchSimpleActivity.class);
             startActivity(intent);
         }
     }

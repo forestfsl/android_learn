@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_list_view).setOnClickListener(this);
         findViewById(R.id.btn_list_cart).setOnClickListener(this);
         findViewById(R.id.btn_grid_view).setOnClickListener(this);
+        findViewById(R.id.btn_grid_channel).setOnClickListener(this);
+        findViewById(R.id.btn_view_pager).setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }else if (v.getId() == R.id.btn_grid_view) {
             Intent intent = new Intent(this, GridViewActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_grid_channel) {
+            Intent intent = new Intent(this, ShoppingChannelActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_view_pager) {
+            Intent intent = new Intent(this, ViewPagerActivity.class);
             startActivity(intent);
         }
     }

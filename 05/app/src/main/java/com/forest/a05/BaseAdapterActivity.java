@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.forest.a05.adapter.PlanetListAdapter;
 import com.forest.a05.bean.Planet;
 
 import java.util.ArrayList;

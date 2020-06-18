@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.forest.a05">
-
     <!-- SD卡读写权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAG" />
-    <!-- 震动 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAG" /> <!-- 震动 -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -15,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BaseAdapterActivity"></activity>
+        <activity android:name=".GridViewActivity"></activity>
+        <activity android:name=".ShoppingDetailActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".ShoppingChannelActivity" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".BaseAdapterActivity" />
         <activity android:name=".TimePickerActivity" />
         <activity android:name=".DatePickerActivity" />
         <activity android:name=".MainActivity">

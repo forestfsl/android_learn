@@ -8,6 +8,7 @@ public class Planet {
     public int image;
     public String name;
     public String desc;
+
     public Planet(int image, String name, String desc) {
         this.image = image;
         this.name = name;
@@ -25,6 +26,7 @@ public class Planet {
             "木星是太阳系八大行星中体积最大、自转最快的行星，排行第五。它的质量为太阳的千分之一，但为太阳系中其它七大行星质量总和的2.5倍",
             "土星为太阳系八大行星之一，排行第六，体积仅次于木星"
     };
+
     public static ArrayList<Planet> getDefaultList() {
         ArrayList<Planet> planetList = new ArrayList<Planet>();
         for (int i = 0; i < iconArray.length; i++) {

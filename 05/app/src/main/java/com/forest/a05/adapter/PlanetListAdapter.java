@@ -1,4 +1,4 @@
-package com.forest.a05;
+package com.forest.a05.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.forest.a05.R;
 import com.forest.a05.bean.Planet;
 
 import java.util.ArrayList;

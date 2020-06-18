@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_date_picker).setOnClickListener(this);
         findViewById(R.id.btn_time_picker).setOnClickListener(this);
         findViewById(R.id.btn_base_adapter).setOnClickListener(this);
+        findViewById(R.id.btn_list_view).setOnClickListener(this);
+        findViewById(R.id.btn_list_cart).setOnClickListener(this);
+        findViewById(R.id.btn_grid_view).setOnClickListener(this);
     }
 
     @Override
@@ -25,10 +28,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (v.getId() == R.id.btn_time_picker) {
             Intent intent = new Intent(this, TimePickerActivity.class);
             startActivity(intent);
-        }else if (v.getId() == R.id.btn_base_adapter) {
+        } else if (v.getId() == R.id.btn_base_adapter) {
             Intent intent = new Intent(this, BaseAdapterActivity.class);
             startActivity(intent);
+        } else if (v.getId() == R.id.btn_list_view) {
+            Intent intent = new Intent(this, ListViewActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_list_cart) {
+            Intent intent = new Intent(this, ShoppingCartActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_grid_view) {
+            Intent intent = new Intent(this, GridViewActivity.class);
+            startActivity(intent);
         }
-
     }
 }

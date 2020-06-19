@@ -14,7 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BroadTempActivity"></activity>
+        <activity android:name=".ScheduleDetailActivity"></activity>
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".VibratorActivity" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".MonthPickerActivity" />
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".BroadSystemActivity" />
+        <activity android:name=".BroadTempActivity" />
         <activity android:name=".LaunchImproveActivity" />
         <activity android:name=".FragmentDynamicActivity" />
         <activity android:name=".FragmentStaticActivity" />

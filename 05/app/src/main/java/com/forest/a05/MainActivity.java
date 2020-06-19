@@ -82,6 +82,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (v.getId() == R.id.btn_broad_temp) {
             Intent intent = new Intent(this, BroadTempActivity.class);
             startActivity(intent);
+        }else if (v.getId() == R.id.btn_broad_system) {
+            Intent intent = new Intent(this, BroadSystemActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_alarm) {
+            Intent intent = new Intent(this, AlarmActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_month_picker) {
+            Intent intent = new Intent(this, MonthPickerActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_calendar) {
+            Intent intent = new Intent(this, CalendarActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_vibrator) {
+            Intent intent = new Intent(this, VibratorActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_schedule) {
+            Intent intent = new Intent(this, ScheduleActivity.class);
+            startActivity(intent);
         }
     }
 }
